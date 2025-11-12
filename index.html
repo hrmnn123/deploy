@@ -3,56 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laporan CI/CD - Identitas Mahasiswa</title>
+    <title>Profil Mahasiswa - Hermansyah</title>
+
     <style>
-        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
         body {
-            font-family: "new times roman";
-            background-color: #f8f9fa;
-            text-align: center;
-            padding-top: 80px;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #6dd5fa, #2980b9);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
         }
+
         .container {
-            background: white;
-            display: inline-block;
-            padding: 40px 60px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 40px 30px;
+            text-align: center;
+            width: 320px;
+            animation: fadeIn 1s ease-in-out;
         }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
         h1 {
-            color:black;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 10px;
         }
+
         p {
-            font-size: 18px;
+            font-size: 16px;
+            margin: 6px 0;
+            color: #f2f2f2;
         }
-        img {
-            width: 140px;
-            margin: 20px 0;
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 15px;
+            margin-top: 15px;
         }
+
         .footer {
-            margin-top: 30px;
-            color: #666;
-            font-size: 14px;
-            color:black;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #ddd;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>LAPORAN TUGAS INDIVIDU</h1>
-        <h2>Proyek Perangkat Lunak</h2>
-        <h3>Praktik CI/CD Menggunakan GitHub</h3>
-        <img src="logo.jpg" alt="Logo Universitas Trunojoyo Madura">
-        
-        <p><strong>Nama:</strong> Hermansyah</p>
-        <p><strong>NIM:</strong> 230411100020</p>
-        <p><strong>Kelas:</strong> E</p>
-        <p><strong>Dosen Pengampu:</strong><br>Andharini Dwi Cahyani, S.Kom., M.Kom., Ph.D.</p>
+        <img src="foto.jpg" alt="Foto Hermansyah" class="profile-img">
+        <h1>Hermansyah</h1>
+        <div class="info-box">
+            <p><strong>NIM:</strong> 230411100020</p>
+            <p><strong>Prodi:</strong> Teknik Informatika</p>
+            <p><strong>Kelas:</strong> PPL E</p>
+            <p><strong>Hobi:</strong> Badminton</p>
+        </div>
         <div class="footer">
-            <p>Jurusan Teknik Informatika<br>
-            Fakultas Teknik<br>
-            Universitas Trunojoyo Madura<br>
-            2025</p>
+            © 2025 Hermansyah | <a href="https://hrmnn123.github.io/deploy/">My GitHub Page</a>
         </div>
     </div>
 </body>
